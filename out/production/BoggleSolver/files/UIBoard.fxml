@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="boggleBoard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UIBoard">
+   <left>
+      <BorderPane prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: #1d2129;" BorderPane.alignment="CENTER">
+         <top>
+            <Label alignment="CENTER" prefHeight="40.0" prefWidth="160.0" text="Boggle Solver" textFill="#83888d" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Gill Sans SemiBold" size="24.0" />
+               </font>
+            </Label>
+         </top>
+         <bottom>
+            <Pane prefHeight="100.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="solveButton" alignment="CENTER" layoutX="160.0" layoutY="19.0" mnemonicParsing="false" onAction="#solveButtonPressed" prefHeight="50.0" prefWidth="75.0" style="-fx-background-color: #5ab86e;" text="Solve" textFill="#ffffffbf">
+                     <font>
+                        <Font name="Monaco" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="quitButton" alignment="CENTER" layoutX="264.0" layoutY="19.0" mnemonicParsing="false" onAction="#quitButtonPressed" prefHeight="50.0" prefWidth="75.0" style="-fx-background-color: #e04050;" text="Quit" textFill="#ffffffbf">
+                     <font>
+                        <Font name="Monaco" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </bottom>
+         <center>
+            <Pane prefHeight="420.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="t1" alignment="CENTER" layoutX="65.0" layoutY="15.0" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: eeeeee;">
+                     <font>
+                        <Font name="Gill Sans SemiBold" size="24.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow blurType="GAUSSIAN" color="#575555" />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="t2" alignment="CENTER" layoutX="165.0" layoutY="15.0" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: eeeeee;">
+                     <font>
+                        <Font name="Gill Sans SemiBold" size="24.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow blurType="GAUSSIAN" color="#575555" />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="t3" alignment="CENTER" layoutX="265.0" layoutY="15.0" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: eeeeee;">
+                     <font>
+                        <Font name="Gill Sans SemiBold" size="24.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow blurType="GAUSSIAN" color="#575555" />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="t4" alignment="CENTER" layoutX="365.0" layoutY="15.0" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: eeeeee;">
+                     <font>
+                        <Font name="Gill Sans SemiBold" size="24.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow blurType="GAUSSIAN" color="#575555" />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="t5" alignment="CENTER" layoutX="65.0" layoutY="115.0" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: eeeeee;">
+                     <font>
+                        <Font name="Gill Sans SemiBold" size="24.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow blurType="GAUSSIAN" color="#575555" />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="t6" alignment="CENTER" layoutX="165.0" layoutY="115.0" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: eeeeee;">
+                     <font>
+                        <Font name="Gill Sans SemiBold" size="24.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow blurType="GAUSSIAN" color="#575555" />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="t7" alignment="CENTER" layoutX="265.0" layoutY="115.0" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: eeeeee;">
+                     <font>
+                        <Font name="Gill Sans SemiBold" size="24.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow blurType="GAUSSIAN" color="#575555" />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="t8" alignment="CENTER" layoutX="365.0" layoutY="115.0" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: eeeeee;">
+                     <font>
+                        <Font name="Gill Sans SemiBold" size="24.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow blurType="GAUSSIAN" color="#575555" />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="t9" alignment="CENTER" layoutX="65.0" layoutY="215.0" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: eeeeee;">
+                     <font>
+                        <Font name="Gill Sans SemiBold" size="24.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow blurType="GAUSSIAN" color="#575555" />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="t10" alignment="CENTER" layoutX="165.0" layoutY="215.0" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: eeeeee;">
+                     <font>
+                        <Font name="Gill Sans SemiBold" size="24.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow blurType="GAUSSIAN" color="#575555" />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="t11" alignment="CENTER" layoutX="265.0" layoutY="215.0" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: eeeeee;">
+                     <font>
+                        <Font name="Gill Sans SemiBold" size="24.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow blurType="GAUSSIAN" color="#575555" />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="t12" alignment="CENTER" layoutX="365.0" layoutY="215.0" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: eeeeee;">
+                     <font>
+                        <Font name="Gill Sans SemiBold" size="24.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow blurType="GAUSSIAN" color="#575555" />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="t13" alignment="CENTER" layoutX="65.0" layoutY="315.0" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: eeeeee;">
+                     <font>
+                        <Font name="Gill Sans SemiBold" size="24.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow blurType="GAUSSIAN" color="#575555" />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="t14" alignment="CENTER" layoutX="165.0" layoutY="315.0" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: eeeeee;">
+                     <font>
+                        <Font name="Gill Sans SemiBold" size="24.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow blurType="GAUSSIAN" color="#575555" />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="t15" alignment="CENTER" layoutX="265.0" layoutY="315.0" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: eeeeee;">
+                     <font>
+                        <Font name="Gill Sans SemiBold" size="24.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow blurType="GAUSSIAN" color="#575555" />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="t16" alignment="CENTER" layoutX="365.0" layoutY="315.0" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: eeeeee;">
+                     <font>
+                        <Font name="Gill Sans SemiBold" size="24.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow blurType="GAUSSIAN" color="#575555" />
+                     </effect>
+                  </TextField>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </left>
+   <right>
+      <BorderPane prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: #1d2129;" BorderPane.alignment="CENTER">
+         <center>
+            <Pane BorderPane.alignment="CENTER">
+               <children>
+                  <TextArea fx:id="wordsFound" editable="false" focusTraversable="false" layoutX="5.0" prefHeight="420.0" prefWidth="335.0" style="-fx-background-color: #eeeeee;">
+                     <font>
+                        <Font name="Gill Sans SemiBold" size="24.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow blurType="GAUSSIAN" color="#575555" />
+                     </effect>
+                  </TextArea>
+               </children>
+            </Pane>
+         </center>
+         <top>
+            <Label prefHeight="29.0" prefWidth="339.0" text="Words Found:" textFill="#83888d" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Gill Sans SemiBold" size="24.0" />
+               </font>
+            </Label>
+         </top>
+         <bottom>
+            <Pane prefHeight="90.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="8.0" layoutY="10.0" prefHeight="60.0" prefWidth="135.0" text="Total Words:" textFill="#83888d" wrapText="true">
+                     <font>
+                        <Font name="Gill Sans SemiBold" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="totalWords" alignment="CENTER" editable="false" focusTraversable="false" layoutX="144.0" layoutY="4.0" prefHeight="76.0" prefWidth="195.0" style="-fx-background-color: #eeeeee;">
+                     <font>
+                        <Font name="Gill Sans SemiBold" size="24.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow blurType="GAUSSIAN" color="#575555" />
+                     </effect>
+                  </TextField>
+               </children>
+            </Pane>
+         </bottom>
+      </BorderPane>
+   </right>
+</BorderPane>
